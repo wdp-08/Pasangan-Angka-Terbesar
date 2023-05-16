@@ -1,18 +1,18 @@
 function dua_pasangan_terbesar(data) {
-    let dataArr = [];
+    let result = [];
     let dataString = data.toString();
 
     for (let i = 0; i < dataString.length - 1; i++) {
-        dataArr.push(dataString[i] + dataString[i + 1]);
+        result.push(dataString[i] + dataString[i + 1]);
     }
-    for (let h = 0; h < dataArr.length; h++) {
-        for (let j = 0; j < dataArr.length; j++) {
-            if (dataArr[j] < dataArr[j + 1]) {
-                [dataArr[j], dataArr[j+1]] = [dataArr[j+1], dataArr[j]]
+    for (let h = 0; h < result.length; h++) {
+        for (let j = 0; j < result.length; j++) {
+            if (result[j] < result[j + 1]) {
+                [result[j], result[j+1]] = [result[j+1], result[j]]
             }
         }
     }
-    return dataArr[0];
+    return result[0];
 }
 
 // TEST CASES
