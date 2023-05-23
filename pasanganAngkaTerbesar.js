@@ -13,4 +13,8 @@ function findLargestPair(angka) {
     return largestPair;
   }
 
-  
+  console.log(findLargestPair(183928));     // Output: 92
+  console.log(findLargestPair(641573));     // Output: 73
+  console.log(findLargestPair(12783456));   // Output: 83
+  console.log(findLargestPair(910233));     // Output: 91
+  console.log(findLargestPair(79918293));   // Output: 99  
